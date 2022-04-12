@@ -7,7 +7,13 @@ class App extends Component {
   render() {
     return (
       <View style={styles.container}>
-        <NativeNumberGeneratorView style={styles.viewRandomNumber} />
+        <NativeNumberGeneratorView
+          initNumber={100}
+          style={styles.viewRandomNumber}
+          onNumberSend={event => {
+            console.log({event});
+          }}
+        />
       </View>
     );
   }

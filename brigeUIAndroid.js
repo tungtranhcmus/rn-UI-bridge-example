@@ -10,7 +10,13 @@ class App extends Component {
   render() {
     return (
       <View style={styles.container}>
-        <RCTRandomNumberView style={styles.viewRandomNumber} />
+        <RCTRandomNumberView
+          initNumber={100}
+          onNumberSend={event => {
+            console.log({event});
+          }}
+          style={styles.viewRandomNumber}
+        />
       </View>
     );
   }

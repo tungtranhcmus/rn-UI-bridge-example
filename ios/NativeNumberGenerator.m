@@ -15,4 +15,7 @@
 
 @interface RCT_EXTERN_MODULE(NativeNumberGeneratorViewManager, RCTViewManager)
 
+RCT_EXPORT_VIEW_PROPERTY(initNumber, NSNumber)
+RCT_EXPORT_VIEW_PROPERTY(onNumberSend, RCTDirectEventBlock)
+
 @end

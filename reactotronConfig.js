@@ -4,7 +4,7 @@ import {LogBox} from 'react-native';
 LogBox.ignoreAllLogs();
 Reactotron.configure({
   name: 'Tangs',
-  host: 'localhost',
+  host: '172.16.14.125',
   // port: 9090,
 });
 

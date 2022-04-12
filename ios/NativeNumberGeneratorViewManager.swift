@@ -23,6 +23,14 @@ class NativeNumberGeneratorViewManager: RCTViewManager {
 }
 
 class NativeNumberGeneratorView: UIView {
+  @objc var onNumberSend: RCTDirectEventBlock?
+  
+  @objc var initNumber: NSNumber = 0{
+    didSet {
+      number = Int(truncating: initNumber)
+    }
+  }
+  
   var number: Int = 0{
     didSet{
       randomNumberLabel.text = String(describing: number)
@@ -53,12 +61,13 @@ class NativeNumberGeneratorView: UIView {
     randomNumberButton = UIButton(type: .system)
     randomNumberButton.translatesAutoresizingMaskIntoConstraints = false
     randomNumberButton.setTitle("Generate", for: .normal)
-    randomNumberButton.addTarget(self, action: Selector(("getRandomNumberAction:")), for: .touchUpInside)
+    randomNumberButton.addTarget(self, action: #selector(self.getRandomNumberAction(_:)), for: .touchUpInside)
     self.addSubview(randomNumberButton)
     
     sendToRN = UIButton(type: .system)
     sendToRN.translatesAutoresizingMaskIntoConstraints = false
     sendToRN.setTitle("Send To RN", for: .normal)
+    sendToRN.addTarget(self, action: #selector(self.sendToRNAction(_:)), for: .touchUpInside)
     self.addSubview(sendToRN)
     
     NSLayoutConstraint.activate([
@@ -75,6 +84,12 @@ class NativeNumberGeneratorView: UIView {
   
   @IBAction func getRandomNumberAction( _ sender: UIButton){
     number = Int.random(in: 0...50)
+  }
+  
+  @IBAction func sendToRNAction( _ sender: UIButton){
+    if onNumberSend != nil {
+      onNumberSend!(["nativeNumber": initNumber])
+    }
   }
   
 }
