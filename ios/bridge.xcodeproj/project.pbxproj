@@ -18,6 +18,8 @@
 		DD16623228032D8800B19064 /* NativeNumberGeneratorViewManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD16623028032D8800B19064 /* NativeNumberGeneratorViewManager.swift */; };
 		DD16623428032F8000B19064 /* NativeNumberGenerator.m in Sources */ = {isa = PBXBuildFile; fileRef = DD16623328032F8000B19064 /* NativeNumberGenerator.m */; };
 		DD16623528032F8000B19064 /* NativeNumberGenerator.m in Sources */ = {isa = PBXBuildFile; fileRef = DD16623328032F8000B19064 /* NativeNumberGenerator.m */; };
+		DD7E9DDB2805FA58005F4BFE /* NativeNumberGeneratorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD7E9DDA2805FA58005F4BFE /* NativeNumberGeneratorView.swift */; };
+		DD7E9DDC2805FA58005F4BFE /* NativeNumberGeneratorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD7E9DDA2805FA58005F4BFE /* NativeNumberGeneratorView.swift */; };
 		DDACB02426F230E3005A9DEE /* RCTCalendarModule.m in Sources */ = {isa = PBXBuildFile; fileRef = DDACB02326F230E3005A9DEE /* RCTCalendarModule.m */; };
 		DDACB02526F230E3005A9DEE /* RCTCalendarModule.m in Sources */ = {isa = PBXBuildFile; fileRef = DDACB02326F230E3005A9DEE /* RCTCalendarModule.m */; };
 /* End PBXBuildFile section */
@@ -50,6 +52,7 @@
 		DD16622F280328BA00B19064 /* NativeNumberGenerator-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NativeNumberGenerator-Bridging-Header.h"; sourceTree = "<group>"; };
 		DD16623028032D8800B19064 /* NativeNumberGeneratorViewManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NativeNumberGeneratorViewManager.swift; sourceTree = "<group>"; };
 		DD16623328032F8000B19064 /* NativeNumberGenerator.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NativeNumberGenerator.m; sourceTree = "<group>"; };
+		DD7E9DDA2805FA58005F4BFE /* NativeNumberGeneratorView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NativeNumberGeneratorView.swift; sourceTree = "<group>"; };
 		DDACB02226F230E3005A9DEE /* RCTCalendarModule.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RCTCalendarModule.h; sourceTree = "<group>"; };
 		DDACB02326F230E3005A9DEE /* RCTCalendarModule.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RCTCalendarModule.m; sourceTree = "<group>"; };
 		E03C5D9889DC4276831C5350 /* libPods-bridge-bridgeTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-bridge-bridgeTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -112,6 +115,7 @@
 				DD16622F280328BA00B19064 /* NativeNumberGenerator-Bridging-Header.h */,
 				DD16623028032D8800B19064 /* NativeNumberGeneratorViewManager.swift */,
 				DD16623328032F8000B19064 /* NativeNumberGenerator.m */,
+				DD7E9DDA2805FA58005F4BFE /* NativeNumberGeneratorView.swift */,
 			);
 			name = bridge;
 			sourceTree = "<group>";
@@ -387,6 +391,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DD7E9DDC2805FA58005F4BFE /* NativeNumberGeneratorView.swift in Sources */,
 				DD16623528032F8000B19064 /* NativeNumberGenerator.m in Sources */,
 				00E356F31AD99517003FC87E /* bridgeTests.m in Sources */,
 				DD16623228032D8800B19064 /* NativeNumberGeneratorViewManager.swift in Sources */,
@@ -398,6 +403,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DD7E9DDB2805FA58005F4BFE /* NativeNumberGeneratorView.swift in Sources */,
 				DD16623128032D8800B19064 /* NativeNumberGeneratorViewManager.swift in Sources */,
 				DD16623428032F8000B19064 /* NativeNumberGenerator.m in Sources */,
 				DDACB02426F230E3005A9DEE /* RCTCalendarModule.m in Sources */,
